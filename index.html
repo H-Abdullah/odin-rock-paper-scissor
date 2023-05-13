@@ -1,16 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <script src="game-scripts.js" defer></script> 
-    <link rel="stylesheet" src="styles.css">
-    <title>Rock Paper Scissor</title>
-</head>
-
-<body>
-    <button onclick='game()' value="rock">Rock</button>
-    <button onclick='game()' value="paper">Paper</button>
-    <button onclick='game()' value="scissor">Scissor</button>
+    <head>
+        <meta charset="utf-8">
+        <script src="game-scripts.js" defer></script> 
+        <link rel="stylesheet" href="styles.css">
+        <title>BATU - KERTAS - GUNTING</title>
+    </head>
+    
+    <body>
+        <h1 id="game-title">BATU - KERTAS - GUNTING</h1>
+        <div id="textResult">Pilih salah satu untuk mulakan permainan</div>
+        <div id="game">
+        <div id="player-option">
+            <button id="rock" value="BATU">
+                <img id="img-rock" src="./images/player-rock-no-bg.png" alt="player-rock">
+            </button>
+            <button id="paper" value="KERTAS">
+                <img id="img-paper" src="./images/player-paper-no-bg.png" alt="player-paper">
+            </button>
+            <button id="scissor" value="GUNTING">
+                <img id="img-scissor" src="./images/player-scissor-no-bg.png" alt="player-scissor">
+            </button>
+        </div>
+        <div id="vs-points">    
+            <div id="versus">
+                <img src="./images/vs-no-bg.png" alt="versus">
+            </div>
+            <div id="point-result">
+                <div id="player-points"></div>
+                <div id="computer-points"></div>
+            </div>
+        </div>
+        <div id="comp-option">
+        </div>
+    </div>
+    <div id="reset">
+        <button id="resetBtn" value="reset">Reset</button>
+    </div>
+    <footer><a id="my-github" href="https://github.com/H-Abdullah">github.com/H-Abdullah</a></footer>
 </body>
 </html>
 
